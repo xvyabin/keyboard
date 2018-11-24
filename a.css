@@ -1,0 +1,82 @@
+*{margin: 0;padding: 0;} /*所有样式margin跟padding样式0*/
+a{text-decoration: none;}/*a标签没有样式*/
+div > kbd{
+	border: 1px solid red;/*边框： 1像素 实心 红色*/
+	width: 4em;/*宽度：4个字*/
+	height: 4em;/*高度：4个字*/
+    display: inline-block;	/*转化块级元素*/ 
+    text-transform: uppercase;/**/
+    position: relative;/*绝对定位*/
+}
+kbd > button{
+     position: absolute;/*绝对定位*/
+     right: 2px;/*右：0*/
+     bottom: 2px;/*下：0*/
+     display: none;
+}
+kbd:hover > button{/**/
+	display: inline-block;/*转化块级元素*/
+    background: rgba(255,255,255,0);
+    border-radius: 1px;
+    border: none;
+    font-size: 10px;
+}
+main{
+    text-align: center;/*居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div>x{
+	display: inline-block;/*转化块级元素*/
+}
+#x > div:nth-child(2){/*div的第二个标签*/
+	margin-left: -18px;/*边框向左：2个字*/
+}
+#x > div:nth-child(3){/*div的第三个标签*/
+	margin-left:-35px;/*边框向左：4个字*/
+}
+  .key{
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #32ffe0 0%,#207cca 48%,#2d301a 100%);
+    border: 2px solid #8e8e8e;
+    color: #353535;
+    border-radius: 8px;
+    box-shadow: 0 0.5px 0 0.3px #3F3F3F;
+   /* display: inline-flex;
+    align-items: center;
+    justify-content: center;*/
+    margin: 0 10px;
+    font-size: 18px;
+    font-family: Helvetica;
+    position: relative;
+            }
+  .row{
+    margin: 16px;
+            }
+body{
+    
+    background: grey url(./wall.jpg) no-repeat center center;
+    background-size: cover;
+}         
+.wrapper{
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+   
+}
+kbd >img{
+    height: 15px;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+.key .text{
+    position: absolute;
+    left: 4px;
+    top: 3px;
+
+
+}
